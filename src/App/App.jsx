@@ -10,7 +10,7 @@ const App=(props) => {
 
 return    <div className='App'>Hello world
             <hr/>
-            <Button text="wajdi" />
+            <Button text="wajdi" bgColor ="Red"/>
             <Button text="button"/>
 
          </div>

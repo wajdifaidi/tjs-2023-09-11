@@ -3,7 +3,10 @@ import style from './Button.module.css'
 const Button = (props) => {
   console.log(props);
     return (
-        <button className={style.Button} >{props.text}</button>
+        <button className={style.Button} style={{
+            backgroundColor:props.bgColor
+        
+        }}>{props.text}</button>
 
     )
 }
