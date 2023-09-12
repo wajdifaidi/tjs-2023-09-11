@@ -11,3 +11,9 @@
 .Button:hover{
     color: grey;
 }
+
+.clicked{
+    box-shadow: 15px 15px 25px grey;
+    border: 1px solid black !important;
+    color:black !important;
+}

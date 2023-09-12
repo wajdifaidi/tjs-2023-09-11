@@ -4,11 +4,19 @@ import PropTypes from 'prop-types'
 
 const Button = (props) => {
  // console.log(props);
+ const [isClicked,setIsClicked] = useState(false);
+
+ useEffect( () =>{
+    setTimeout(()=> {setIsClicked(false)},180);
+},[isClicked])
+
     return (
         <button onClick={(evt)=>{
+            setIsClicked(true);
           props.onClick('ok');
+
             //console.log(evt);
-        }} className={style.Button} style={{
+        }} className={isClicked? style.Button +" " + style.clicked :style.Button} style={{
             backgroundColor:props.bgColor,
             ...props.style,
         
